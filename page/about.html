@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Про нас</title>
+	<link rel="shortcut icon" href="../images/medical.ico" type="image/x-icon">
+	<meta charset="utf-8">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="../style/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+</head>
+<body>
+<header>
+	<div class="header">
+	<div class="top_information">
+		<div class="nameCompany">
+			<img src="../images/logo1.png">
+			<p name="top">Стоматологія<br> <span>Рівне</span></p>
+		</div>
+		<div class="phone">
+			<img src="../images/phone_call.png">
+			<p>+38( <span>067</span> )905-64-53<br>+38( <span>099</span> )371-51-26</p>
+		</div>
+		<div class="address">
+			<img src="../images/map.png">
+			<p>м.Рівне вул.Соборна<br><span>156/49</span></p>
+		</div>
+	</div>
+		<div class="top_nav">
+			<ul>
+				<li><a href="../index.html">Головна</a></li>
+				<li><span><a href="page/about.html">Про нас</a></span></li>
+				<li><a href="services.html">Наші послуги</a></li>
+				<li><a href="personnel.html">Персонал</a></li>
+				<li><a href="equipment.html">Обладнання</a></li>
+				<li><a href="news.html">Цікаве</a></li>
+				<li><a href="contacts.html">Контакти</a></li>
+			</ul>
+			</ul>
+		</div>
+	</div>
+	<div class="head_photo">
+	<div class="header_1">
+		<img src="../images/bg2.jpeg">
+		<h1>Про нас</h1>
+		<h2>Головна &rarr; Про нас</h2>
+	</div>
+	</div>
+</header>
+<div class="content">
+<a href="#" class="scrollup"><img src="../images/up.png"></a>
+	<div class="photo_clinic">
+		<h1>Наша стоматологія</h1>
+		<div class="photo_clinic_wrap">
+			<img src="../images/photo_clinic.jpg">
+		</div>
+	</div>
+	<div class="experience_about">
+		<h1>ДОВСІД</h1>
+		<div class="experience_about_wrap">
+			<p>Наша стоматологія працює з 2000 року.</p>
+			<img src="../images/medical_experience.png">
+		</div>
+	</div>
+	<div class="services_about">
+		<h1>ПОВНИЙ СПЕКТР ПОСЛУГ</h1>
+		<p>Консультація, терапія, протезування, гігієна та профілактика, імплантація.</p>
+		<div class="services_about_wpap">
+			<img src="../images/services_about.jpg">
+		</div>
+	</div>
+	<div class="person_about">
+			<h1>ДОСВІДЧЕНІ ФАХІВЦІ</h1>
+		<div class="person_about_wrap">
+			<div class="person_about_1">
+				<img src="../images/Nataliya.jpg">
+				<h3>Лікар-стоматолог вищої категорії</h3>
+			</div>
+			<div class="person_about_2">
+				<img src="../images/Pavlo.jpg">
+				<h3>Лікар-стоматолог</h3>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="footer">
+<div class="footer_wrapper">
+  <div class="fot_logo">
+	<img src="../images/logo1.png">
+	<p>Стоматологія<br> <span>Рівне</span></p>
+  </div>
+  <div class="contacts_us">
+  	<p>Наші контакти</p>
+  	<hr class="inline" width="400" size="2" color="#2bb842" >
+  	<img class="call" src="../images/phone_call.png">
+  	<p class="number">+38( <span>067</span> )905-64-53<br>+38( <span>099</span> )371-51-26</p>
+  	<div class="contacts_address">
+			<img src="../images/map.png">
+			<p>м.Рівне вул.Соборна<br><span>156/49</span></p>
+		</div>
+  </div>
+  <div class="spam">
+  	<p>Підписатися на новини та акції</p>
+  	<hr class="inline" width="400" size="2" color="#47a9ee" >
+  	<p class="info_foot">Введіть свою адресу електронної пошти, щоб отримати інфомацію про акції та новини.</p>
+  	<form action="../sendmail.php" data-them="Тема письма" data-show=".thank">
+		<input class="spam_inp" type="email" name="email" data-name="E-mail: " data-required>
+		<input id="submit" class="spam_but" type="submit" value="Підписатись" >
+	</form>
+  </div>
+  <div class="author">
+	  	<p>&copy; 2017 Бречко Ю.В.</p>
+	  </div>
+</div>
+</div>
+<button class="myBtn" id="myBtn">Записатись на прийом</button>
+	<div id="myModal" class="modal">
+		<div class="modal-content">
+			<span class="close"><img src="../images/close.ico" alt="closed"></span>
+        <form action="../sendmail.php" data-them="Тема письма" data-show=".thank">
+        <input id='fio' onkeyup='checkParams()'>
+            <input class="name_form" type="text" name="name" data-name="І'мя: " placeholder="Введіть ваше ім'я" data-required maxlength="15" onkeyup="var yratext=/['0-9',':',''A-Z', 'a-z']/; if(yratext.test(this.value)) this.value=''">
+            <input id="phone" class="phone_form" type="text" name="phone" data-name="Телефон: " placeholder="Введіть ваш номер" data-required>
+            <input class="submit" type="submit" style="color: #fff" value="Подати заявку">
+	    </form>
+	    <div class="thank">Дякуємо за заявку!</div>
+		</div>
+	</div>
+	<script scr="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script src="../js/jquery.maskedinput.min.js"></script>
+	<script src="../jquery.sendFormLP.js"></script>
+	<script src="../js/script.js"></script>
+	<script src="../js/validation_number.js"></script>
+</body>
+</html>
