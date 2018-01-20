@@ -1,6 +1,6 @@
-  var total_pics_num = 3; 
-  var interval = 5000; 
-  var time_out = 1;
+  var total_pics_num = 3; // колличество изображений
+  var interval = 5000;    // задержка между изображениями
+  var time_out = 1;       // задержка смены изображений
   var i = 0;
   var timeout;
   var opacity = 100;

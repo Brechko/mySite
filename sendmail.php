@@ -1,4 +1,4 @@
-﻿<?
+<?
 if (isset($_POST['m_data'])) {$m_data = $_POST['m_data'];}
 if (isset($_POST['toEmail'])) {$toEmail = $_POST['toEmail'];}
 if (isset($_POST['fromEmail'])) {$fromEmail = $_POST['fromEmail'];}

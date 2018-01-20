@@ -4,7 +4,7 @@
 
   		options = $.extend({
             toEmail: 'bre4korocker@gmail.com',
-            fromEmail: 'BrechkoYura@outlook.com',
+            fromEmail: 'Bre4koRocker@yandex.ua',
             interval : 5000
         }, options);
 
@@ -83,7 +83,7 @@ $(function(){
 
 	$('form').sendFormLP({
 		toEmail: 'bre4korocker@gmail.com',
-		fromEmail: 'BrechkoYura@outlook.com',
+		fromEmail: 'Bre4koRocker@yandex.ua',
 		interval: 5000
 	});
 

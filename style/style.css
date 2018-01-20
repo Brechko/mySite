@@ -9,58 +9,45 @@
 body {
 	height: 1500px;
 	background-color: #f7f7f7;
-	font-family: 'Roboto Condensed', sans-serif;
-}
-
-.top_information {
-	position: relative;
-	margin: 0 auto;
-	width: 1200px;
-	height: 200px;
 }
 
 .header {
-	position: relative;
 	height: 200px;
 	background-color: #eeeeee;
+	position: relative;
+	z-index: 1;
 }
 
 .header p {
+	position: absolute;
 	font-family: 'Roboto Condensed', sans-serif;
 	font-size: 22px;
 	color: #47a9ee;
-	padding: 60px 0 0 0;
+	padding-left: 210px;
+	padding-top: 30px;
 }
 
 .header p span {
 	color: #2bb842;
 }
 
-.nameCompany {
-	float: left;
-	width: 400px;
-	height: 200px
-}
-
 .nameCompany img {
-	float: left;
+	position: absolute;
 	width: 80px;
-	padding: 50px 0 0 30px;
-}
-
-.phone {
-	float: left;
-	width: 400px;
-	height: 200px
+	padding-left: 120px;
+	padding-top: 30px;
 }
 
 .phone img {
-	padding: 65px 0 0 100px;
-	padding-right: 30px;
-	float: left;
+	position: absolute;
+	padding-top: 45px;
+	padding-left: 640px;
 }
 
 .phone p {
+	position: absolute;
+	padding-top: 35px;
+	padding-left: 700px;
 	font-size: 18px;
 }
 
@@ -68,18 +55,16 @@ body {
 	color: #2bb842;
 }
 
-.addres {
-	width: 400px;
-	height: 200px
-}
-
 .address img {
-	padding: 65px 0 0 130px;
-	padding-right: 30px;
-	float: left;
+	position: absolute;
+	padding-top: 45px;
+	padding-left: 990px;
 }
 
 .address p {
+	position: absolute;
+	padding-top: 35px;
+	padding-left: 1050px;
 	font-size: 18px;
 }
 
@@ -88,24 +73,23 @@ body {
 }
 
 .top_nav {
-	position: absolute;
-	max-width: 1000px;
-	left: 50%;
-	margin-left: -500px;
-	width: 1000px;
+	width: 80%;
 	height: 60px;
+	margin: 0 auto;
 	border-radius: 8px;
 	top: 170px;
+	position: relative;
 	background-color: #47a9ee;
 }
 
 .top_nav:hover {
+	border: 2px solid #2bb842;
 }
 
 .top_nav ul {
-	padding-left: 70px;
-	list-style: none;
-	background: #47a9ee;
+  list-style: none;
+  padding-left: 100px;
+  background: #47a9ee;
 }
 
 .top_nav ul a {
@@ -121,112 +105,52 @@ body {
   -webkit-transition: all 0.3s 0.01s ease;
 }
 
-.top_nav ul a:hover {
-	height: 70px;
-	border-radius: 0 0 20px 20px;
-	transition-duration: 1s;
-}
-
 .top_nav span a {
 	background-color: #2bb842;
 }
 
 .top_nav a:hover {
-	background: #2bb842;
+  background: #2bb842;
 }
 
 .top_nav li {
-	max-width: 1000px;
-	float:left;
-}
-
-.head_photo {
-	position: relative;
-	width: 100%;
-	height: 319px;
-	z-index: -10;
-}
-
-.header_1 {
-	width: 1024px;
-	height: 319px;
-	margin: 0 auto;
+  float:left;
 }
 
 .header_1 img {
+	width: 100%;
 	position: absolute;
 	border-radius: 0 0 50px 50px;
 }
 
 .header_1 h1 {
-	position:relative;
-	padding: 50px;
-	width: 500px;
-	height: 100px;
+	padding-top: 60px;
+	padding-left: 60px;
+	position: absolute;
 	font-family: 'Roboto Condensed', sans-serif;
 	font-size: 80px;
 	color: #fff;
 	text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+
 }
 
 .header_1 h2 {
-	position: relative;
-	padding-left: 50px;
-	width: 300px;
-	height: 100px;
+	position: absolute;
 	font-family: 'Roboto Condensed', sans-serif;
+	padding: 320px 0 0 60px;
 	color: #fff;
 	text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
-}
-
-#fio {
-	visibility: hidden;
 }
 
 /*___________________________________________________________content*/
 
 /*___________________________________________________________experience*/
-.photo_clinic {
-	position: relative;
-	margin-top: 50px;
-	width: 100%;
-	height: 600px;
-	background-color: #eeeeee;
-}
-
-.photo_clinic_wrap {
-	margin: 0 auto;
-	width: 800px;
-	height: 250px;
-}
-
-.photo_clinic h1 {
-	text-align: center;
-	font-family: 'Roboto Condensed', sans-serif;
-	color: #47a9ee;
-	padding-top: 30px;
-}
-
-.photo_clinic img {
-	position: relative;
-	border-radius: 10px;
-	top: 50px;
-	left: 150px;
-	width: 500px;
-	height: 375px;
-}
-
 .experience_about {
-	position: relative;
-	margin-top: 50px;
+	position: absolute;
 	width: 100%;
 	height: 400px;
-}
-
-.experience_about_wrap {
-	margin: 0 auto;
-	width: 800px;
-	height: 250px;
+	background-color: #eeeeee;
+	top: 800px;
 }
 
 .experience_about h1 {
@@ -245,22 +169,16 @@ body {
 }
 
 .experience_about img {
-	position: relative;
-	left: 50px;
-	bottom: 40px;
+	position: absolute;
+	left: 330px;
+	bottom: 180px;
 }
 
 .services_about {
-	position: relative;
+	position: absolute;
 	width: 100%;
 	height: 400px;
-	background-color: #eeeeee;
-}
-
-.services_about_wpap {
-	position: relative;
-	width: 500px;
-	margin: 0 auto;
+	top: 1200px;
 }
 
 .services_about h1 {
@@ -279,16 +197,18 @@ body {
 }
 
 .services_about img {
-	position: relative;
-	padding-top: 50px;
-	margin: 0 auto;
+	position: absolute;
+	bottom: 50px;
+	left: 380px;
 	border-radius: 80px;
 }
 
 .person_about {
-	position: relative;
+	position: absolute;
 	width: 100%;
 	height: 400px;
+	background-color: #eeeeee;
+	top: 1600px;
 }
 
 .person_about h1 {
@@ -298,50 +218,16 @@ body {
 	padding-top: 30px;
 }
 
-.person_about_wrap {
-	padding-top: 30px;
-	width: 810px;
-	position: relative;
-	margin: 0 auto;
-}
-
-.person_about_wrap h3 {
-	padding-top: 20px;
-	color: #2bb842;
-}
-
-.person_about_1 {
-	display: inline-block;
-	width: 300px;
-	padding-left: 50px;
-}
-
-.person_about_1 img {
-	width: 250px;
-	border-radius: 15px;
-}
-
-.person_about_2 {
-	display: inline-block;
-	width: 300px;
-	padding-left: 100px;
-}
-
-.person_about_2 img {
-	width: 250px;
-	border-radius: 15px;
-}
-
 /*___________________________________________________________equipment_info*/
 
 .equipment_info {
-	position: relative;
+	position: absolute;
+	top: 700px;
 	width: 100%;
 	height: 1000px;
 }
 
 .equipment_info h1 {
-	margin: 50px 0 30px 0;
 	text-align: center;
 	color: #47a9ee;
 	font-family: 'Roboto Condensed', sans-serif;
@@ -460,22 +346,18 @@ body {
 /*___________________________________________________________cont_info*/
 
 .maps {
-	position: relative;
-	margin: 0 auto;
+	position: absolute;
 	width: 700px;
-}
-
-.wrap_cont_inf {
-	margin: 0 auto;
-	width: 700px;
-	height: 250px;
+	left: 300px;
+	top: 900px;
 }
 
 .cont_info {
-	position: relative;
-	padding: 39px 0 0 0 ;
+	position: absolute;
 	font-family: 'Roboto Condensed', sans-serif;
 	color: #2bb842;
+	top: 700px;
+	left: 300px;
 }
 
 .cont_info p {
@@ -484,19 +366,19 @@ body {
 /*___________________________________________________________news_info*/
 
 .news_info {
-	position: relative;
-	margin: 0 auto;
+	position: absolute;
+	left: 80px;
+	top: 700px;
 	width: 1200px;
 	height: 1260px;
 }
 
 .braces {
-	margin-top: 50px;
 	font-family: 'Roboto Condensed', sans-serif;
-	color: #47a9ee;
+	color: #2bb842;
 	width: 100%;
-	height: 300px;
-	border: 3px solid #47a9ee;
+	height: 400px;
+	border: 3px solid #2bb842;
 	background: #fff;
 }
 
@@ -511,24 +393,16 @@ body {
 .braces ul  {
 	list-style-type: square;
 	padding: 40px 50px 0 40px;
-	color: #2bb842;
 	text-align: justify;
 }
 
 .brush_teeth {
-	margin-top: 50px;
-	position: relative;
+	position: absolute;
+	top: 420px;
 	width: 100%;
-	height: 510px;
-	border: 3px solid  #2BB842;
+	height: 400px;
+	border: 3px solid  #47a9ee;
 	background: #fff;
-}
-
-.brush_teeth ul {
-	list-style-type: square;
-	padding: 40px 50px 0 40px;
-	color: #2bb842;
-	text-align: justify;
 }
 
 .brush_teeth  h3 {
@@ -551,10 +425,10 @@ body {
 }
 
 .chewin_gum {
-	position: relative;
-	margin: 50px 0 0 0;
+	position: absolute;
+	top: 840px;
 	width: 100%;
-	height: 350px;
+	height: 400px;
 	border: 3px solid #2bb842;
 	background: #fff;
 }
@@ -562,13 +436,13 @@ body {
 .chewin_gum h3 {
 	font-family: 'Roboto Condensed', sans-serif;
 	font-size: 32px;
-	color: #2bb842;
+	color: #47a9ee;
 	padding-left: 20px;
 }
 
 .chewin_gum p {
 	font-family: 'Roboto Condensed', sans-serif;
-	color: #47a9ee;
+	color: #2bb842;
 	padding: 20px 50px 0 40px;
 	text-align: justify;
 }
@@ -576,9 +450,10 @@ body {
 /*____________________________________________________________time_work*/
 
 .time_work {
-	position: relative;
-	margin: 50px auto;
+	position: absolute;
 	font-family: 'Roboto Condensed', sans-serif;
+	top: 700px;
+	left: 80px;
 	width: 1200px;
 	height: 240px;
 }
@@ -659,106 +534,111 @@ body {
 /*___________________________________________________________why_my*/
 
 .why_my {
-	position: relative;
+	position: absolute;
 	width: 100%;
 	height: 400px;
+	top: 1000px;
 	background: #eeeeee;
 }
 
-.wrap_center {
-	margin: 50px auto;
-	width: 1290px;
-	height: 400px;
-}
-
-.why_my h1 {
+.why_my p {
 	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 44px;
 	color: #47a9ee;
 	text-align: center;
 }
 
 .easy_booking {
-	float: left;
-	width: 400px;
+	position: absolute;
+	top: 130px;
+	left: 50px;
+	width: 450px;
 	height: 200px;
 }
 
 .easy_booking img {
-	padding: 50px 0 0 0;
-	float: left;
+	position: absolute;
+	top: 30px;
 }
 
 .easy_booking h2 {
+	position: absolute;
 	font-family: 'Roboto Condensed', sans-serif;
-	padding: 60px 0 0 70px;
 	color: #2bb842;
+	top: 20px;
+	left: 80px;
 }
 
 .easy_booking p {
-	padding-left: 70px;
-	color: #47a9ee;
+	position: absolute;
 	font-size: 18px;
-	width: 350px;
-	text-align: justify;
+	top: 60px;
+	left: 80px;
 }
 
 .experience {
-	float: left;
-	width: 430px;
+	position: absolute;
+	top: 130px;
+	left: 470px;
+	width: 400px;
 	height: 200px;
 }
 
 .experience img {
-	padding: 50px 0 0 0;
-	float: left;
+	position: absolute;
+	top: 30px;
 }
 
 .experience h2 {
+	position: absolute;
 	font-family: 'Roboto Condensed', sans-serif;
-	padding: 60px 0 0 70px;
 	color: #2bb842;
+	top: 20px;
+	left: 80px;
 }
 
 .experience p {
-	padding-left: 70px;
-	color: #47a9ee;
+	position: absolute;
 	font-size: 18px;
-	width: 350px;
-	text-align: justify;
+	top: 60px;
+	left: 80px;
 }
 
 .price {
-	float: right;
-	width: 460px;
+	position: absolute;
+	top: 130px;
+	left: 890px;
+	width: 400px;
 	height: 200px;
 }
 
 .price img {
-	padding: 50px 0 0 0;
-	float: left;
+	position: absolute;
+	top: 30px;
 }
 
 .price h2 {
+	position: absolute;
 	font-family: 'Roboto Condensed', sans-serif;
-	padding: 60px 0 0 70px;
 	color: #2bb842;
+	top: 20px;
+	left: 80px;
 }
 
 .price p {
-	padding-left: 70px;
-	color: #47a9ee;
+	position: absolute;
 	font-size: 18px;
-	width: 350px;
-	text-align: justify;
+	top: 60px;
+	left: 80px;
 }
 
 /*___________________________________________________________our_services*/
 
 .our_services {
-	position: relative;
-	margin: 0 auto;
-	width: 1260px;
+	position: absolute;
+	width: 100%;
 	height: 600px;
+	top: 1500px;
 }
 
 .our_services h2 {
@@ -777,16 +657,17 @@ body {
 	text-align: center;
 }
 .gigiena_serv {
-	float: left;
-	padding: 70px 0 0 20px;
-	width: 400px;
+	position: absolute;
+	bottom: 100px;
+	left: 60px;
+	width: 300px;
 	height: 300px;
 }
 
 .gigiena_serv .link_serv_gig {
 	position: absolute;
-	bottom: 150px;
-	left: 180px;
+	bottom: 30px;
+	left: 160px;
 	width: 200px;
 	height: 50px;
 	background: #2bb842;
@@ -795,7 +676,7 @@ body {
 
 .link_serv_gig p {
 	position: absolute;
-	top: -15px;
+	top: -20px;
 	left: 20px;
 	font-family: 'Roboto Condensed', sans-serif;
 	color: #fff;
@@ -804,7 +685,7 @@ body {
 
 .gigiena_serv .link_serv_gig:hover {
 	background: #47a9ee;
-	left: 200px;
+	left: 180px;
 }
 
 .gigiena_serv img {
@@ -814,16 +695,17 @@ body {
 }
 
 .protez_serv {
-	float: left;
-	padding: 70px 0 0 20px;
-	width: 400px;
+	position: absolute;
+	bottom: 100px;
+	left: 510px;
+	width: 300px;
 	height: 300px;
 }
 
 .protez_serv .link_serv_prot {
 	position: absolute;
-	bottom: 150px;
-	left: 600px;
+	bottom: 30px;
+	left: 160px;
 	width: 200px;
 	height: 50px;
 	background: #2bb842;
@@ -832,7 +714,7 @@ body {
 
 .link_serv_prot p {
 	position: absolute;
-	top: -15px;
+	top: -20px;
 	left: 20px;
 	font-family: 'Roboto Condensed', sans-serif;
 	color: #fff;
@@ -841,7 +723,7 @@ body {
 
 .protez_serv .link_serv_prot:hover {
 	background: #47a9ee;
-	left: 620px;
+	left: 180px;
 }
 
 .protez_serv img {
@@ -851,16 +733,17 @@ body {
 }
 
 .terap_serv {
-	float: left;
-	padding: 70px 0 0 20px;
-	width: 400px;
+	position: absolute;
+	bottom: 100px;
+	left: 960px;
+	width: 300px;
 	height: 300px;
 }
 
 .terap_serv .link_serv_terap {
 	position: absolute;
-	bottom: 150px;
-	left: 1020px;
+	bottom: 30px;
+	left: 160px;
 	width: 200px;
 	height: 50px;
 	background: #2bb842;
@@ -869,8 +752,8 @@ body {
 
 .link_serv_terap p {
 	position: absolute;
-	top: -15px;
-	left: 30px;
+	top: -20px;
+	left: 20px;
 	font-family: 'Roboto Condensed', sans-serif;
 	color: #fff;
 	font-size: 18px;
@@ -878,7 +761,7 @@ body {
 
 .terap_serv .link_serv_terap:hover {
 	background: #47a9ee;
-	left: 1040px;
+	left: 180px;
 }
 
 .terap_serv img {
@@ -890,8 +773,7 @@ body {
 .all_serv {
 	position: absolute;
 	top: 530px;
-	left: 50%;
-	margin-left: -100px;
+	left: 590px;
 	width: 200px;
 	height: 50px;
 	border-radius: 8px;
@@ -900,7 +782,7 @@ body {
 
 .all_serv p {
 	position: absolute;
-	bottom: 15px;
+	bottom: 10px;
 	left: 50px;
 	font-family: 'Roboto Condensed', sans-serif;
 	color: #fff;
@@ -913,11 +795,13 @@ body {
 /*___________________________________________________________slider*/
 
 .slider_ing {
-	position: relative;
-	margin: 0 auto;
-	width: 1000px;
-	height: 562px;
-	z-index: -1;
+	position: absolute;
+	opacity: 0.5;
+	width: 1000;
+	height: 786px;
+	top: 2200px;
+	left: 180px;
+	margin-top: 50px;
 }
 
 .slider_ing img {
@@ -925,21 +809,29 @@ body {
 }
 
 .slider_text {
-	padding: 50px 0 50px 0;
+	position: absolute;
 	width: 100%;
+	top: 2150px;
 	text-align: center;
+	z-index: 30;
 }
 
 .slider_text h1 {
 	font-family: 'Roboto Condensed', sans-serif;
 	color: 	#47a9ee;
 }
+
+.slider_text hr {
+	height: 2px;
+	background: #2bb842;
+}
+
 /*___________________________________________________________wrapper_pers*/
 
  .wrapper_pers1 {
  	position: relative;
- 	margin: 50px auto;
- 	padding: 30px 0 0 30px;
+ 	top: 500px;
+ 	left: 80px;
  	width: 1200px;
  	height: 350px;
  	border: 3px solid #47a9ee;
@@ -964,17 +856,10 @@ body {
  	color: #2bb842;
  }
 
- .wrapper_pers1 h4 {
- 	position: absolute;
- 	left: 350px;
- 	top: 130px;
- 	font-family: 'Roboto Condensed', sans-serif;
- 	font-size: 20px;
- 	color: #2bb842;
- }
-
  .photo_naem1 {
- 	position: relative;
+ 	position: absolute;
+ 	left: 30px;
+ 	top: 30px;
  	width: 250px;
  	height: 250px;
  	border-radius: 13px;
@@ -989,8 +874,8 @@ body {
 
  .wrapper_pers2 {
  	position: relative;
- 	padding: 30px 0 0 30px;
- 	margin: 0 auto;
+ 	top: 700px;
+ 	left: 80px;
  	width: 1200px;
  	height: 350px;
  	border: 3px solid #47a9ee;
@@ -1015,17 +900,10 @@ body {
  	color: #2bb842;
  }
 
- .wrapper_pers2 h4 {
- 	position: absolute;
- 	left: 350px;
- 	top: 130px;
- 	font-family: 'Roboto Condensed', sans-serif;
- 	font-size: 20px;
- 	color: #2bb842;
- }
-
  .photo_naem2 {
- 	position: relative;
+ 	position: absolute;
+ 	left: 30px;
+ 	top: 30px;
  	width: 250px;
  	height: 250px;
  	border-radius: 13px;
@@ -1042,8 +920,8 @@ body {
 
  .wrapper_serv {
  	position: relative;
- 	margin: 100px auto;
-
+ 	top: 500px;
+ 	left: 80px;
  	width: 1200px;
  	height: 1800px;
  	border: 3px solid #47a9ee;
@@ -1237,33 +1115,101 @@ body {
 
 /*________________________________________________________________________footer*/
 .footer {
-	margin-top: 100px;
+	position: absolute;
 	width: 100%;
 	height: 300px;
+	top: 1400px;
 	background-color: #eeeeee;	
 	border-radius: 50px 50px 0 0;
 }
 
-.footer_wrapper {
-	position: relative;
-	margin: 0 auto;
-	width: 1300px;
+.footer_cont {
+	position: absolute;
+	width: 100%;
 	height: 300px;
+	top: 1400px;
+	background-color: #eeeeee;	
+	border-radius: 50px 50px 0 0;
+}
+
+.footer_news {
+	position: absolute;
+	width: 100%;
+	height: 300px;
+	top: 2000px;
+	background-color: #eeeeee;	
+	border-radius: 50px 50px 0 0;
+}
+
+.footer_equi {
+	position: absolute;
+	width: 100%;
+	height: 300px;
+	top: 1800px;
+	background-color: #eeeeee;	
+	border-radius: 50px 50px 0 0;
+}
+
+.footer_per {
+	position: absolute;
+	width: 100%;
+	height: 300px;
+	top: 1700px;
+	background-color: #eeeeee;	
+	border-radius: 50px 50px 0 0;
+}
+
+.footer_price {
+	position: absolute;
+	width: 100%;
+	height: 300px;
+	top: 2000px;
+	background-color: #eeeeee;	
+	border-radius: 50px 50px 0 0;
+}
+
+.footer_serv {
+	position: absolute;
+	width: 100%;
+	height: 300px;
+	top: 2600px;
+	background-color: #eeeeee;	
+	border-radius: 50px 50px 0 0;
+}
+
+.footer_ab {
+	position: absolute;
+	width: 100%;
+	height: 300px;
+	top: 2200px;
+	background-color: #eeeeee;	
+	border-radius: 50px 50px 0 0;
+}
+
+.footer_ind {
+	position: absolute;
+	width: 100%;
+	height: 300px;
+	top: 2900px;
+	background-color: #eeeeee;	
+	border-radius: 50px 50px 0 0;
 }
 
 .fot_logo {
-	width: 430px;
-	float: left;
+	position: absolute;
+	width: 80px;
+	height: 80px;
+	top: 50px;
+	left: 100px;
 }
 
 .fot_logo img {
 	width: 80px;
-	padding: 80px 20px 0 100px;
-	float: left;
+	padding: 10px 0 0 15px;
 }
 
 .fot_logo p {
-	padding-top: 90px;
+	position: absolute;
 	font-family: 'Roboto Condensed', sans-serif;
 	font-size: 22px;
 	color: #47a9ee;
@@ -1276,26 +1222,36 @@ body {
 }
 
 .contacts_us {
-	width: 430px;
-	float: left;
+	position: absolute;
 	font-family: 'Roboto Condensed', sans-serif;
 	font-size: 18px;
+	left: 400px;
+	width: 400px;
+	height: 300px;
+}
+
+.inline {
+	position: absolute;
+	top: 50px;
 }
 
 .call {
-	padding: 30px 50px 0 0;
-	float: left;
+	position: absolute;
+	top: 80px;
+	left: 10px;
 }
 
 .contacts_us p {
-	padding: 30px 0 5px 0;
+	position: absolute;
+	top: 20px;
 	color: #47a9ee;
 }
 
 .contacts_us .number {
-	padding: 30px 0 0 0;
+	position: absolute;
 	color: #47a9ee;
-
+	top: 70px;
+	left: 100px;
 }
 
 .contacts_us .number span {
@@ -1303,8 +1259,15 @@ body {
 }
 
 .contacts_address img {
-	padding: 30px 50px 0 0;
-	float: left;
+	position: absolute;
+	left: 10px;
+	top: 160px;
+}
+
+.contacts_address p {
+	position: absolute;
+	left: 100px;
+	top: 150px;
 }
 
 .contacts_address p span {
@@ -1312,25 +1275,31 @@ body {
 }
 
 .spam {
-	width: 430px;
-	float: left;
+	position: absolute;
 	font-family: 'Roboto Condensed', sans-serif;
 	font-size: 18px;
+	left: 850px;
+	width: 400px;
+	height: 300px;
 }
 
 .spam p {
-	padding: 30px 0 5px 0;
+	position: absolute;
+	top: 20px;
 	color: #2bb842;
 }
 
 .spam .info_foot {
+	position: absolute;
+	top: 60px;
 	color: #47a9ee;
 }
 
 .spam_inp {
+	position: absolute;
+	top: 160px;
 	width: 250px;
 	font-size: 13px;
-	margin: 50px 30px 0 0;
 	padding: 6px 0 4px 10px;
 	border: 1px solid #cecece;
 	background: #fff;
@@ -1339,6 +1308,9 @@ body {
 }
 
 .spam_but {
+	position: absolute;
+	top: 160px;
+	left: 300px;
 	width: 100px;
 	font-size: 13px;
 	padding: 6px 0 4px 10px;
@@ -1389,20 +1361,12 @@ body {
 	font-weight: bold;
 	cursor: pointer;
 }
- .close img {
- 	width: 30px;
- 	opacity: 0.5;
- }
-
- .close img:hover {
- 	opacity: 1;
- }
 
 .myBtn {
     position: fixed;
     z-index: 1000;
     top: 50%;
-    right: -80px;
+    left: 91%;
     width: 200px;
     height: 40px;
     font-family: 'Roboto Condensed', sans-serif;
@@ -1505,12 +1469,4 @@ body {
 	background-color: #2bb842;
 	border: 3px solid #47a9ee;
 	opacity: 1;
-}
-
-.author {
-	position: relative;
-	width: 200px;
-	top: 60px;
-	left: 600px;
-	color: #2bb842;
 }

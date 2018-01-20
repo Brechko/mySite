@@ -11,7 +11,6 @@
 <body>
 <header>
 	<div class="header">
-	<div class="top_information">
 		<div class="nameCompany">
 			<img src="../images/logo1.png">
 			<p name="top">Стоматологія<br> <span>Рівне</span></p>
@@ -24,7 +23,6 @@
 			<img src="../images/map.png">
 			<p>м.Рівне вул.Соборна<br><span>156/49</span></p>
 		</div>
-	</div>
 		<div class="top_nav">
 			<ul>
 				<li><a href="../index.html">Головна</a></li>
@@ -38,12 +36,10 @@
 			</ul>
 		</div>
 	</div>
-	<div class="head_photo">
 	<div class="header_1">
 		<img src="../images/bg2.jpeg">
 		<h1>Наші послуги</h1>
 		<h2>Головна &rarr; Наші послуги</h2>
-	</div>
 	</div>
 </header>
 <div class="content">
@@ -76,8 +72,7 @@
 		</div>
 	</div>
 </div>
-<div class="footer">
-<div class="footer_wrapper">
+<div class="footer_serv">
   <div class="fot_logo">
 	<img src="../images/logo1.png">
 	<p>Стоматологія<br> <span>Рівне</span></p>
@@ -97,22 +92,17 @@
   	<hr class="inline" width="400" size="2" color="#47a9ee" >
   	<p class="info_foot">Введіть свою адресу електронної пошти, щоб отримати інфомацію про акції та новини.</p>
   	<form action="../sendmail.php" data-them="Тема письма">
-		<input class="spam_inp" type="email" name="email" data-name="E-mail: " data-required>
-		<input id="submit" class="spam_but" type="submit" value="Підписатись">
+		<input class="spam_inp" type="email" name="email" data-name="E-mail: ">
+		<input class="spam_but" type="submit" value="Підписатись">
 	</form>
-  </div>
-  <div class="author">
-	  	<p>&copy; 2017 Бречко Ю.В.</p>
-	  </div>
   </div>
 </div>
 <button class="myBtn" id="myBtn">Записатись на прийом</button>
 	<div id="myModal" class="modal">
 		<div class="modal-content">
-			<span class="close"><img src="../images/close.ico" alt="closed"></span>
+			<span class="close">&times;</span>
         <form action="../sendmail.php" data-them="Тема письма" data-show=".thank">
-        <input id='fio' onkeyup='checkParams()'>
-            <input class="name_form" type="text" name="name" data-name="І'мя: " placeholder="Введіть ваше ім'я" data-required maxlength="15" onkeyup="var yratext=/['0-9',':',''A-Z', 'a-z']/; if(yratext.test(this.value)) this.value=''">
+            <input class="name_form" type="text" name="name" data-name="І'мя: " placeholder="Введіть ваше ім'я" data-required>
             <input id="phone" class="phone_form" type="text" name="phone" data-name="Телефон: " placeholder="Введіть ваш номер" data-required>
             <input class="submit" type="submit" style="color: #fff" value="Подати заявку">
 	    </form>

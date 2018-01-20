@@ -32,15 +32,3 @@ return false;
 });
  
 });
-
-
-function checkParams() {
-    var fio = $('#fio').val();
-
-    
-    if(fio.length == 0) {
-        $('#submit').removeAttr('disabled');
-    } else {
-        $('#submit').attr('disabled', 'disabled');
-    }
-}
